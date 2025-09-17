@@ -38,7 +38,7 @@ public class Main {
             boolean utilsJavaCreated = utilsJava.createNewFile();
             log.append("Создание файла HomeWork1.Main.java: ").append(mainJavaCreated ? "OK" : "FAIL").append("\n");
             log.append("Создание файла Utils.java: ").append(utilsJavaCreated ? "OK" : "FAIL").append("\n");
-        }catch (IOException e){
+        } catch (IOException e) {
             log.append("Ошибка при создании файлов!").append(e.getMessage());
         }
 
@@ -60,7 +60,7 @@ public class Main {
             writer.write(log.toString());
             writer.close();
             System.out.println("Успешно!");
-        }catch (IOException e){
+        } catch (IOException e) {
             log.append("Ошибка temp");
         }
     }
